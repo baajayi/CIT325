@@ -1,0 +1,252 @@
+
+SYSTEM_USER_ID SYSTEM_USER_NAME                                                 
+-------------- --------------------                                             
+             2 DBA                                                              
+             3 DBA                                                              
+             4 DBA                                                              
+             5 DBA                                                              
+
+4 rows selected.
+
+
+4 rows updated.
+
+
+PL/SQL procedure successfully completed.
+
+
+SYSTEM_USER_ID SYSTEM_USER_NAME                                                 
+-------------- --------------------                                             
+             2 DBA 1                                                            
+             3 DBA 2                                                            
+             4 DBA 3                                                            
+             5 DBA 4                                                            
+
+4 rows selected.
+
+
+Sequence dropped.
+
+
+Sequence dropped.
+
+
+Sequence dropped.
+
+
+Sequence dropped.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Package created.
+
+PROCEDURE INSERT_CONTACT
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_FIRST_NAME                  VARCHAR2                IN    
+ PV_MIDDLE_NAME                 VARCHAR2                IN    
+ PV_LAST_NAME                   VARCHAR2                IN    
+ PV_CONTACT_TYPE                VARCHAR2                IN    
+ PV_ACCOUNT_NUMBER              VARCHAR2                IN    
+ PV_MEMBER_TYPE                 VARCHAR2                IN    
+ PV_CREDIT_CARD_NUMBER          VARCHAR2                IN    
+ PV_CREDIT_CARD_TYPE            VARCHAR2                IN    
+ PV_CITY                        VARCHAR2                IN    
+ PV_STATE_PROVINCE              VARCHAR2                IN    
+ PV_POSTAL_CODE                 VARCHAR2                IN    
+ PV_ADDRESS_TYPE                VARCHAR2                IN    
+ PV_COUNTRY_CODE                VARCHAR2                IN    
+ PV_AREA_CODE                   VARCHAR2                IN    
+ PV_TELEPHONE_NUMBER            VARCHAR2                IN    
+ PV_TELEPHONE_TYPE              VARCHAR2                IN    
+ PV_USER_NAME                   VARCHAR2                IN    
+PROCEDURE INSERT_CONTACT
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_FIRST_NAME                  VARCHAR2                IN    
+ PV_MIDDLE_NAME                 VARCHAR2                IN    
+ PV_LAST_NAME                   VARCHAR2                IN    
+ PV_CONTACT_TYPE                VARCHAR2                IN    
+ PV_ACCOUNT_NUMBER              VARCHAR2                IN    
+ PV_MEMBER_TYPE                 VARCHAR2                IN    
+ PV_CREDIT_CARD_NUMBER          VARCHAR2                IN    
+ PV_CREDIT_CARD_TYPE            VARCHAR2                IN    
+ PV_CITY                        VARCHAR2                IN    
+ PV_STATE_PROVINCE              VARCHAR2                IN    
+ PV_POSTAL_CODE                 VARCHAR2                IN    
+ PV_ADDRESS_TYPE                VARCHAR2                IN    
+ PV_COUNTRY_CODE                VARCHAR2                IN    
+ PV_AREA_CODE                   VARCHAR2                IN    
+ PV_TELEPHONE_NUMBER            VARCHAR2                IN    
+ PV_TELEPHONE_TYPE              VARCHAR2                IN    
+ PV_USER_ID                     NUMBER                  IN     DEFAULT
+
+
+Package body created.
+
+No errors.
+
+ System System       First         Last                                         
+User ID User Name    Name       MI Name                                         
+------- ------------ ---------- -- ----------                                   
+      6 BONDSB       Barry      L  Bonds                                        
+      7 CURRYW       Wardell    S  Curry                                        
+     -1 ANONYMOUS    <Null>     <N <Null>                                       
+                                ul                                              
+                                l>                                              
+                                                                                
+
+3 rows selected.
+
+
+PL/SQL procedure successfully completed.
+
+No errors.
+
+PL/SQL procedure successfully completed.
+
+No errors.
+
+PL/SQL procedure successfully completed.
+
+
+                         ACCOUNT                                                
+FULL_NAME                NUMBER     ADDRESS                TELEPHONE            
+------------------------ ---------- ---------------------- --------------       
+Charlie   Brown          SLC-000011 Lehi, Utah             (207) 877-4321       
+Peppermint   Patty       SLC-000011 Lehi, Utah             (207) 877-4321       
+Sally   Brown            SLC-000011 Lehi, Utah             (207) 877-4321       
+
+3 rows selected.
+
+BEGIN
+*
+ERROR at line 1:
+ORA-04043: object CONTACT_PACKAGE does not exist
+ORA-06512: at line 6 
+
+
+
+Package created.
+
+FUNCTION INSERT_CONTACT RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_FIRST_NAME                  VARCHAR2                IN    
+ PV_MIDDLE_NAME                 VARCHAR2                IN     DEFAULT
+ PV_LAST_NAME                   VARCHAR2                IN    
+ PV_CONTACT_TYPE                VARCHAR2                IN    
+ PV_ACCOUNT_NUMBER              VARCHAR2                IN    
+ PV_MEMBER_TYPE                 VARCHAR2                IN    
+ PV_CREDIT_CARD_NUMBER          VARCHAR2                IN    
+ PV_CREDIT_CARD_TYPE            VARCHAR2                IN    
+ PV_CITY                        VARCHAR2                IN    
+ PV_STATE_PROVINCE              VARCHAR2                IN    
+ PV_POSTAL_CODE                 VARCHAR2                IN    
+ PV_ADDRESS_TYPE                VARCHAR2                IN    
+ PV_COUNTRY_CODE                VARCHAR2                IN    
+ PV_AREA_CODE                   VARCHAR2                IN    
+ PV_TELEPHONE_NUMBER            VARCHAR2                IN    
+ PV_TELEPHONE_TYPE              VARCHAR2                IN    
+ PV_USER_NAME                   VARCHAR2                IN     DEFAULT
+FUNCTION INSERT_CONTACT RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_FIRST_NAME                  VARCHAR2                IN    
+ PV_MIDDLE_NAME                 VARCHAR2                IN     DEFAULT
+ PV_LAST_NAME                   VARCHAR2                IN    
+ PV_CONTACT_TYPE                VARCHAR2                IN    
+ PV_ACCOUNT_NUMBER              VARCHAR2                IN    
+ PV_MEMBER_TYPE                 VARCHAR2                IN    
+ PV_CREDIT_CARD_NUMBER          VARCHAR2                IN    
+ PV_CREDIT_CARD_TYPE            VARCHAR2                IN    
+ PV_CITY                        VARCHAR2                IN    
+ PV_STATE_PROVINCE              VARCHAR2                IN    
+ PV_POSTAL_CODE                 VARCHAR2                IN    
+ PV_ADDRESS_TYPE                VARCHAR2                IN    
+ PV_COUNTRY_CODE                VARCHAR2                IN    
+ PV_AREA_CODE                   VARCHAR2                IN    
+ PV_TELEPHONE_NUMBER            VARCHAR2                IN    
+ PV_TELEPHONE_TYPE              VARCHAR2                IN    
+ PV_USER_ID                     NUMBER                  IN     DEFAULT
+
+
+Package body created.
+
+FUNCTION INSERT_CONTACT RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_FIRST_NAME                  VARCHAR2                IN    
+ PV_MIDDLE_NAME                 VARCHAR2                IN     DEFAULT
+ PV_LAST_NAME                   VARCHAR2                IN    
+ PV_CONTACT_TYPE                VARCHAR2                IN    
+ PV_ACCOUNT_NUMBER              VARCHAR2                IN    
+ PV_MEMBER_TYPE                 VARCHAR2                IN    
+ PV_CREDIT_CARD_NUMBER          VARCHAR2                IN    
+ PV_CREDIT_CARD_TYPE            VARCHAR2                IN    
+ PV_CITY                        VARCHAR2                IN    
+ PV_STATE_PROVINCE              VARCHAR2                IN    
+ PV_POSTAL_CODE                 VARCHAR2                IN    
+ PV_ADDRESS_TYPE                VARCHAR2                IN    
+ PV_COUNTRY_CODE                VARCHAR2                IN    
+ PV_AREA_CODE                   VARCHAR2                IN    
+ PV_TELEPHONE_NUMBER            VARCHAR2                IN    
+ PV_TELEPHONE_TYPE              VARCHAR2                IN    
+ PV_USER_NAME                   VARCHAR2                IN     DEFAULT
+FUNCTION INSERT_CONTACT RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_FIRST_NAME                  VARCHAR2                IN    
+ PV_MIDDLE_NAME                 VARCHAR2                IN     DEFAULT
+ PV_LAST_NAME                   VARCHAR2                IN    
+ PV_CONTACT_TYPE                VARCHAR2                IN    
+ PV_ACCOUNT_NUMBER              VARCHAR2                IN    
+ PV_MEMBER_TYPE                 VARCHAR2                IN    
+ PV_CREDIT_CARD_NUMBER          VARCHAR2                IN    
+ PV_CREDIT_CARD_TYPE            VARCHAR2                IN    
+ PV_CITY                        VARCHAR2                IN    
+ PV_STATE_PROVINCE              VARCHAR2                IN    
+ PV_POSTAL_CODE                 VARCHAR2                IN    
+ PV_ADDRESS_TYPE                VARCHAR2                IN    
+ PV_COUNTRY_CODE                VARCHAR2                IN    
+ PV_AREA_CODE                   VARCHAR2                IN    
+ PV_TELEPHONE_NUMBER            VARCHAR2                IN    
+ PV_TELEPHONE_TYPE              VARCHAR2                IN    
+ PV_USER_ID                     NUMBER                  IN     DEFAULT
+
+0                                                                               
+0                                                                               
+0                                                                               
+
+PL/SQL procedure successfully completed.
+
+
+                    System Account                                              
+Full Name          User ID Number       Address          Telephone              
+------------------ ------- ------------ ---------------- ----------------       
+Shirley Partridge        4 SLC-000012   Lehi, Utah       (207) 877-4321         
+Keith Partridge          6 SLC-000012   Lehi, Utah       (207) 877-4321         
+Laurie Partridge        -1 SLC-000012   Lehi, Utah       (207) 877-4321         
+
+3 rows selected.
+
