@@ -1,0 +1,17 @@
+CREATE OR REPLACE
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents 
+
+
+
+Warning: Type Body created with compilation errors.
+
+DECLARE
+*
+ERROR at line 1:
+ORA-04063: type body "STUDENT.BASE_T" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "STUDENT.BASE_T"
+ORA-06512: at line 2 
+
+
